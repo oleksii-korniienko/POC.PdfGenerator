@@ -9,6 +9,7 @@ This repository provides a comparison of three PDF libraries: Aspose, PdfPig, an
 #### Pros
 - **No external dependencies**: Aspose does not require any external dependencies or unmanaged code.
 - **Existing license**: Sirius already possesses a license for Aspose.
+- **Html => PDF**: allows to generate pdf from HTML template.
 
 #### Cons
 - **Stuck to specific version**: Due to the non-prolongation of the license, Sirius is limited to using a specific version of Aspose.
@@ -42,7 +43,7 @@ This repository provides a comparison of three PDF libraries: Aspose, PdfPig, an
 
 
 ### Key Takeaways
-- **Aspose**: Existing license but stuck to a specific version, performance and quality issues.
+- **Aspose**: Existing license but stuck to a specific version, performance and quality issues. Supports HTML => PDF conversion.
 - **PdfPig**: Free, open-source, low-level manipulation required.
 - **QuestPDF**: Modern, easy to use, requires a license, recommended for better quality and performance.
 

@@ -6,6 +6,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.PdfGenerator.PdfPig", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.PdfGenerator.QuestPdf", "POC.PdfGenerator.QuestPdf\POC.PdfGenerator.QuestPdf.csproj", "{E5B85E0E-A337-4DB0-8EEA-0B7F952B2942}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{DEAD25F8-74FA-4567-9E6E-E31ACF9A2B9C}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
