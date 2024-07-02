@@ -47,4 +47,4 @@ This repository provides a comparison of three PDF libraries: Aspose, PdfPig, an
 - **PdfPig**: Free, open-source, low-level manipulation required.
 - **QuestPDF**: Modern, easy to use, requires a license, recommended for better quality and performance.
 
-For further details and examples, refer to the respective GitHub repositories linked above.
+In my opinion, we can use PdfPig now for our purpose. It is fast, easy to use, do not require the license purchasing
