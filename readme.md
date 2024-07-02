@@ -32,7 +32,7 @@ This repository provides a comparison of three PDF libraries: Aspose, PdfPig, an
 [QuestPDF GitHub Repository](https://github.com/QuestPDF/QuestPDF?tab=readme-ov-file)
 
 #### Pros
-- **Modern and actively supported**: QuestPDF is a modern, actively supported, and developed library.
+- **Modern and actively supported. Open-source**: QuestPDF is a modern, actively supported, and developed library.
 - **100% managed code**: The library is entirely managed code, which simplifies integration and use.
 - **Fluent interface**: QuestPDF allows for fluent and easy manipulation of PDF documents, making it very user-friendly.
 - **Feature-rich**: It offers a lot of features that facilitate PDF creation and manipulation.
