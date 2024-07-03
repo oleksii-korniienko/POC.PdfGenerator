@@ -24,9 +24,9 @@ public class UnitTest1
                         .Row(row =>
                         {
                             row.ConstantItem(450)
-                                .Text("Some text")
+                                .Text("List of supported languages")
                                 .SemiBold().FontSize(24).FontColor(Colors.Blue.Medium);
-
+                            
                             row.ConstantItem(50)
                                 .Image(File.ReadAllBytes("logo.png"));
                         });
@@ -40,6 +40,11 @@ public class UnitTest1
                             x.Spacing(20);
 
                             x.Item().Text(Placeholders.LoremIpsum());
+
+                            "Chinese: 浅色模式; Ukrainian: Укрзалізниця; Russian: Героев упа 73В; English: Anytown, WA 99999; Korean: 어두운 모드; Japanese: ダークモード; Arabic: وضع الظلام; Hebrew: מצב כהה; Spanish: Modo oscuro; French: Mode sombre; German: Dunkles Design; Italian: Modalità scura; Portuguese: Modo escuro; turkish: Koyu mod; Swedish: Mörkt läge; Netherlands: Donkere modus;"
+                                .Split(";")
+                                .ToList()
+                                .ForEach(a => x.Item().Text(a.Trim()));
                         });
                     
                     page.Footer()
