@@ -28,7 +28,7 @@ Only these libraries were considered as they do not require external dependencie
 
 #### Cons
 - **Low-level manipulation**: PdfPig requires low-level manipulation of PDF documents, such as specifying the coordinates of the text, which can be inconvenient compared to more user-friendly libraries.
-- **Low-level manipulation**: Multi-language not supported by default. For each language, we need to import the font
+- **Additional fonts are required**: Multi-language not supported by default. For each language, we need to import the font
 
 ### QuestPDF
 
