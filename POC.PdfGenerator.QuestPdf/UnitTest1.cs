@@ -3,6 +3,7 @@ using QuestPDF.Drawing;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
+using QuestPDF.Previewer;
 
 namespace POC.PdfGenerator.QuestPdf;
 
@@ -66,6 +67,6 @@ public class UnitTest1
                         });
                 });
             })
-            .GeneratePdf("output.pdf");
+            .ShowInPreviewer();
     }
 }

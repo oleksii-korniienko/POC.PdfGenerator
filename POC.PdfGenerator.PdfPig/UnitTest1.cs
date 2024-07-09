@@ -19,7 +19,6 @@ public class UnitTest1
     {
         PdfDocumentBuilder builder = new PdfDocumentBuilder();
 
-
         var font = GetFont(builder, language);
         
         PdfDocumentBuilder.AddedFont helvetica = builder.AddStandard14Font(Standard14Font.Helvetica);

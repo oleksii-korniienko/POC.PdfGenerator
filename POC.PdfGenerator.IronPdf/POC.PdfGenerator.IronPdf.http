@@ -1,0 +1,6 @@
+@POC.PdfGenerator.IronPdf_HostAddress = http://localhost:5172
+
+GET {{POC.PdfGenerator.IronPdf_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
