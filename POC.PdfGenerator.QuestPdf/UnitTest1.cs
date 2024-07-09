@@ -1,4 +1,5 @@
 using QuestPDF;
+using QuestPDF.Drawing;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
@@ -12,6 +13,9 @@ public class UnitTest1
     {
         Settings.License = LicenseType.Community;
 
+        FontManager.RegisterFont(File.OpenRead("GaMaamli-Regular.ttf")); // use file name
+
+        
         Document.Create(d =>
             {
                 d.Page(page =>
@@ -44,7 +48,8 @@ public class UnitTest1
                             "Chinese: 浅色模式; Ukrainian: Укрзалізниця; Russian: Героев упа 73В; English: Anytown, WA 99999; Korean: 어두운 모드; Japanese: ダークモード; Arabic: وضع الظلام; Hebrew: מצב כהה; Spanish: Modo oscuro; French: Mode sombre; German: Dunkles Design; Italian: Modalità scura; Portuguese: Modo escuro; turkish: Koyu mod; Swedish: Mörkt läge; Netherlands: Donkere modus;"
                                 .Split(";")
                                 .ToList()
-                                .ForEach(a => x.Item().Text(a.Trim()));
+                                .ForEach(a => x.Item().Text(a.Trim()).FontFamily("Ga Maamli")
+                                );
                         });
                     
                     page.Footer()
