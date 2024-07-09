@@ -43,13 +43,15 @@ public class UnitTest1
 
     private PdfDocumentBuilder.AddedFont GetFont(PdfDocumentBuilder builder, string language)
     {
-        return language switch
+        /*return language switch
         {
             "Chinese" => GetFontBytes("NotoSansSC-Regular.ttf"),
             "Japanese" => GetFontBytes("NotoSansJP-Regular.ttf"),
             "Korean" => GetFontBytes("NotoSansKR-Regular.ttf"),
             _ => GetFontBytes("NotoSans-Regular.ttf")
-        };
+        };*/
+
+        return GetFontBytes("NotoSansKR-Regular.ttf");
 
         PdfDocumentBuilder.AddedFont GetFontBytes(string fileName)
         {

@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using POC.PdfGenerator.IronPdf.Views;
 using Razor.Templating.Core;
 
@@ -43,7 +42,10 @@ app.MapGet("/test-report", async () =>
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+namespace POC.PdfGenerator.IronPdf
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    {
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
 }

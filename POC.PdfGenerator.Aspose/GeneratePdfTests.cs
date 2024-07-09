@@ -8,6 +8,10 @@ namespace POC.PdfGenerator.Aspose
         [Fact]
         public void Test1()
         {
+            License license = new License();
+            // Set license
+            license.SetLicense("Aspose.Total.NET.lic");
+            
             // Initialize the document
             Document pdfDocument = new Document();
             
@@ -53,7 +57,7 @@ namespace POC.PdfGenerator.Aspose
             page.Paragraphs.Add(headerTable);
 
             // Specify the path to the custom font
-            string fontPath = @"D:\Repository\Temp\POC.PdfGenerator\POC.PdfGenerator.Aspose\GaMaamli-Regular.ttf";
+            string fontPath = @"D:\Repository\Temp\POC.PdfGenerator\POC.PdfGenerator.Aspose\NotoSansKR-Regular.ttf";
             
             // Load the custom font
             Font customFont = FontRepository.OpenFont(fontPath);
@@ -64,10 +68,20 @@ namespace POC.PdfGenerator.Aspose
                 ("Chinese", "浅色模式"),
                 ("English", "Light Mode"),
                 ("Russian", "Светлый режим"),
-                ("Japanese", "ライトモード"),
+                ("Japanese", "墨消し未実行のファイルのダウンロード"),
                 ("Korean", "라이트 모드"),
                 ("Polish", "Tryb jasny"),
-                ("Ukrainian", "Світлий режим")
+                ("Ukrainian", "Світлий режим"),
+                ("Arabic", "وضع النهار"),
+                ("Hebrew", "מצב יום"),
+                ("Spanish", "Modo claro"),
+                ("French", "Mode clair"),
+                ("German", "Heller Modus"),
+                ("Italian", "Modalità chiara"),
+                ("Portuguese", "Modo claro"),
+                ("Turkish", "Açık Mod"),
+                ("Swedish", "Ljust läge"),
+                ("Netherlands", "Lichte modus")
             };
 
             // Set the initial vertical position for the text

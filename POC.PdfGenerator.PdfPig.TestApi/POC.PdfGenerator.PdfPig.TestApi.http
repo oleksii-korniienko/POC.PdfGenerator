@@ -1,0 +1,6 @@
+@POC.PdfGenerator.PdfPig.TestApi_HostAddress = http://localhost:5027
+
+GET {{POC.PdfGenerator.PdfPig.TestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

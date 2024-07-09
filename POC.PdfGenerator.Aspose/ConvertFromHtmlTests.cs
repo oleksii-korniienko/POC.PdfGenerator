@@ -9,6 +9,10 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
+        License license = new License();
+            // Set license
+            license.SetLicense("Aspose.Total.NET.lic");
+        
         var original = File.ReadAllText("src.html");
 
         // generate a sample words of different languages to test encoding. Each words should contain characters that are specific to the language (so that to test every possible unsupported symbol)
@@ -40,10 +44,7 @@ public class UnitTest1
 
         using var stream = new MemoryStream(Encoding.UTF8.GetBytes(modifiedTemplate));
         
-        Document pdfDocument = new Document(stream, new HtmlLoadOptions
-        {
-            IsEmbedFonts = false
-        });
+        Document pdfDocument = new Document(stream, new HtmlLoadOptions());
         
         pdfDocument.Save("output.pdf");
     }
