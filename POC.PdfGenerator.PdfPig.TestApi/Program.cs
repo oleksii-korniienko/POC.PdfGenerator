@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using POC.PdfGenerator.PdfPig.TestApi;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,9 +30,18 @@ app.MapGet("/generate", () =>
         pdfStream.Position = 0;
         return Results.File(pdfStream, "application/pdf");
     })
-    .WithName("Generate pdf manually with QuestPdf")
+    .WithName("Generate pdf")
     .WithOpenApi();
 
+
+app.MapGet("/generate-for-language", ([FromQuery] string language) =>
+    {
+        var pdfStream = PdfReportGenerator.GenerateSingleLanguage(language);
+        pdfStream.Position = 0;
+        return Results.File(pdfStream, "application/pdf");
+    })
+    .WithName("Generate pdf for specific language")
+    .WithOpenApi();
 app.Run();
 
 namespace POC.PdfGenerator.PdfPig.TestApi

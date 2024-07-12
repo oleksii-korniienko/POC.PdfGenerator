@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.PdfGenerator.QuestPdf.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.PdfGenerator.PdfPig.TestApi", "POC.PdfGenerator.PdfPig.TestApi\POC.PdfGenerator.PdfPig.TestApi.csproj", "{2A8F7522-BAE9-4A08-B527-C31F4016466D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.PdfGenerator.ExcelToPdf.Console", "POC.PdfGenerator.ExcelToPdf.Console\POC.PdfGenerator.ExcelToPdf.Console.csproj", "{4D4117C0-FAE0-4310-B94C-C353D254AA8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.PdfGenerator.ExcelToPdf.TestApi", "POC.PdfGenerator.ExcelToPdf.TestApi\POC.PdfGenerator.ExcelToPdf.TestApi.csproj", "{23F8D58E-105E-4837-A453-EFC89B44BFE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,5 +63,13 @@ Global
 		{2A8F7522-BAE9-4A08-B527-C31F4016466D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A8F7522-BAE9-4A08-B527-C31F4016466D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A8F7522-BAE9-4A08-B527-C31F4016466D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4117C0-FAE0-4310-B94C-C353D254AA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4117C0-FAE0-4310-B94C-C353D254AA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4117C0-FAE0-4310-B94C-C353D254AA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4117C0-FAE0-4310-B94C-C353D254AA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F8D58E-105E-4837-A453-EFC89B44BFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F8D58E-105E-4837-A453-EFC89B44BFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F8D58E-105E-4837-A453-EFC89B44BFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F8D58E-105E-4837-A453-EFC89B44BFE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
